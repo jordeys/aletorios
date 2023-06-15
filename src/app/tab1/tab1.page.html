@@ -1,17 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Items
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!-- Contenedor de las cajas -->
+<div class="posicion">
+  <!-- Las cajas se mostrarán o no dependiendo del valor de "n" -->
+  <div class="box" *ngIf="n>=1"></div>
+  <div class="box" *ngIf="n>=2"></div>
+  <div class="box" *ngIf="n>=3"></div>
+  <div class="box" *ngIf="n>=4"></div>
+  <div class="box" *ngIf="n>=5"></div>
+  <div class="box" *ngIf="n>=6"></div>
+</div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<!-- Botón para generar número aleatorio -->
+<ion-button expand="block" (click)="generateNumber()">Aleatorio</ion-button>
 </ion-content>

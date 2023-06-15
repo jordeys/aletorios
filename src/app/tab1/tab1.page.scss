@@ -1,0 +1,37 @@
+.posicion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  
+  /* Asignamos diferentes colores a cada caja utilizando la pseudo-clase nth-child() */
+  .box:nth-child(1) {
+    background-color: red;
+  }
+  
+  .box:nth-child(2) {
+    background-color: blue;
+  }
+  
+  .box:nth-child(3) {
+    background-color: green;
+  }
+  
+  .box:nth-child(4) {
+    background-color: yellow;
+  }
+  
+  .box:nth-child(5) {
+    background-color: orange;
+  }
+  
+  .box:nth-child(6) {
+    background-color: purple;
+  }

@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  // Variable para almacenar el número aleatorio y controlar la visibilidad de las cajas
+  n: number = 0;
 
+  // Función para generar un número aleatorio y asignarlo a "n"
+  generateNumber() {
+    this.n = Math.floor(Math.random() * 6) + 1;
+  }
 }
